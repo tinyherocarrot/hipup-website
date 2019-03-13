@@ -43,7 +43,9 @@ class Index extends Component {
 
       return { page, posts, pages };
     } catch (err) {
-      if (err.data.status === 403) {
+      console.log(err)
+
+      if (err.data && err.data.status === 403) {
         tokenExpired();
       }
     }
@@ -62,7 +64,8 @@ class Index extends Component {
           this.setState({ id });
         })
         .catch(err => {
-          if (err.data.status === 403) {
+          // console.log(err)
+          if (err.data && err.data.status === 403) {
             tokenExpired();
           }
         });
