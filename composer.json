@@ -1,0 +1,10 @@
+{
+    "name": "tinyherocarrot/hipup-website",
+    "authors": [
+        {
+            "name": "Andrew Huang",
+            "email": "andrw.huang@gmail.com"
+        }
+    ],
+    "require": {}
+}
